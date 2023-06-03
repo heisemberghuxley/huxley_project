@@ -5,7 +5,7 @@ from config.database import Base
 
 class Supplier(Base):
     
-    __tablename__= "product"
+    __tablename__= "supplier"
     
     id = Column(Integer, primary_key=True)
     Name = Column(String)
