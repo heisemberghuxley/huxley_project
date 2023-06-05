@@ -1,11 +1,17 @@
-from sqlalchemy import column, ForeignKey, Integer
+from sqlalchemy import Column, ForeignKey, Integer
+from config.database import Base 
+from sqlalchemy.orm import relationship  
 
-from config import base 
-
-class Supplies(base):
+class Supplies(Base):
     __tablename__ = "supplies"
 
-    id=column(Interger,primary_key=true)
-    Supplies_ID = column(Integer,ForeignKey("Supplier_ID"))
-    Product_ID = column(Integer,ForeignKey("Product_ID"))
+    id=Column(Integer,primary_key=True)
+    Supplier_ID = Column(Integer,ForeignKey("supplier.id"))
+    Product_ID = Column(Integer,ForeignKey("product.id"))
     Purchase_Price = Column (Integer)
+    
+    
+    
+    
+    
+    
