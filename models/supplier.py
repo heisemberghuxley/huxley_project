@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-
+from sqlalchemy.orm import relationship
 from config.database import Base
 
 
@@ -11,6 +11,9 @@ class Supplier(Base):
     Name = Column(String)
     Address = Column(String)
     Phone= Column(Integer)
-    Price = Column(Integer)
-    Email = Column(string)
-    
+    Email = Column(String)
+
+
+
+
+
