@@ -1,7 +1,6 @@
 from fastapi import APIRouter,Path, Query,Depends
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.encoders import jsonable_encoder
-from models.supplies import Supplies as SuppliesModel
 from service.supplies import SuppliesService 
 from schemas.supplies import Supplies 
 from config.database import Session
@@ -31,8 +30,8 @@ def create_supplies(supplies:Supplies):
     SuppliesService(db).create_supplies(supplies)
     return JSONResponse(content={"message":" created successfully", "status_code" : 201})
 
-@supplies_router.put("/supplies{id}",tags=["supplies"])
-def update_supplies(id:int,supplies:Supplies):
+@supplies_router.put("/supplies/{id}",tags=["supplies"])
+def update_supplies(id:int,data:Supplies):
     db = Session()
     result = SuppliesService(db).get_for_id(id)
     if not result:
@@ -42,7 +41,7 @@ def update_supplies(id:int,supplies:Supplies):
     
     #todo editar
     
-@supplies_router.delete("/supplies{id}",tags=["supplies"])
+@supplies_router.delete("/supplies/{id}",tags=["supplies"])
 def delete_supplies(id:int):
     db = Session()
     result = SuppliesService(db).get_for_id(id)

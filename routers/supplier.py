@@ -43,7 +43,7 @@ def update_supplier(id:int,supplier:Supplier):
     #todo editar
     
 @supplier_router.delete("/supplier/{id}",tags=["supplier"])
-def delete_supplier(id:int,movie:Supplier):
+def delete_supplier(id:int):
     db = Session()
     result = SupplierService(db).get_for_id(id)
     if not result:

@@ -1,14 +1,14 @@
 from sqlalchemy import Column, ForeignKey, Integer
 from config.database import Base 
-from sqlalchemy.orm import relationship  
+
 
 class Supplies(Base):
     __tablename__ = "supplies"
 
     id=Column(Integer,primary_key=True)
-    Supplier_ID = Column(Integer,ForeignKey("supplier.id"))
-    Product_ID = Column(Integer,ForeignKey("product.id"))
-    Purchase_Price = Column (Integer)
+    supplier_id = Column(Integer,ForeignKey("supplier.id"))
+    product_id = Column(Integer,ForeignKey("product.id"))
+    purchase_price = Column (Integer)
     
     
     

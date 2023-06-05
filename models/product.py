@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String
 from config.database import Base
-from sqlalchemy.orm import relationship
+
 
 class Product(Base):
     
@@ -14,10 +14,3 @@ class Product(Base):
     entry_date = Column(String)
     availability = Column(String)
     available_quantity = Column(Integer)
-    
-    
-    
-    
-    
-    
-    

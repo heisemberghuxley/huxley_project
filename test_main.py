@@ -9,7 +9,7 @@ def test_home():
     assert response.status_code == 200
 
 <<<<<<< HEAD
-def test_route_movie():
+
 =======
 def test_route_product():
 >>>>>>> heisenberg

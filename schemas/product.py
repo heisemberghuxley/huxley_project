@@ -15,7 +15,7 @@ class Product(BaseModel):
             schema_extra = {
                 "example":{
                     'id': 1,
-                    'name': 'Heisenberg',
+                    'name': 'arroz',
                     'brand': "Diana",
                     'description':"whiter and of good quality",
                     'price': 2000,
