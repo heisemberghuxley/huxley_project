@@ -40,7 +40,7 @@ def update_supplier(id:int,supplier:Supplier):
     SupplierService(db).update_supplier(supplier)
     return JSONResponse(content={"message":"supplier update succeefully","status_code":202}, status_code=202)
     
-    #todo editar
+    
     
 @supplier_router.delete("/supplier/{id}",tags=["supplier"])
 def delete_supplier(id:int):

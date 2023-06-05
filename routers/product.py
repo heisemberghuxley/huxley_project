@@ -8,9 +8,6 @@ from config.database import Session
 
 product_router = APIRouter()
 
-#@genres_router.get('/genres', tags=['genres'], status_code=200)
-#def get_genres_hello():
-    
 
 @product_router.get('/product', tags=['product'], status_code=200)
 def get_product():
@@ -41,7 +38,6 @@ def update_product(id:int,product:Product):
     ProductService(db).update_product(product)
     return JSONResponse(content={"message":"product update succeefully","status_code":202}, status_code=202)
     
-    #todo editar
     
 @product_router.delete("/product{id}",tags=["product"])
 def delete_product(id:int):

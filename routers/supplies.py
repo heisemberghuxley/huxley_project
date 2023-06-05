@@ -6,8 +6,7 @@ from schemas.supplies import Supplies
 from config.database import Session
 
 supplies_router = APIRouter()
-#@genres_router.get('/genres', tags=['genres'], status_code=200)
-#def get_genres_hello():
+
     
 
 @supplies_router.get('/supplies', tags=['supplies'], status_code=200)
@@ -39,7 +38,6 @@ def update_supplies(id:int,data:Supplies):
     SuppliesService(db).update_supplies(id,data)
     return JSONResponse(content={"message":"supplies update succeefully","status_code":202}, status_code=202)
     
-    #todo editar
     
 @supplies_router.delete("/supplies/{id}",tags=["supplies"])
 def delete_supplies(id:int):

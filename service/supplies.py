@@ -26,7 +26,7 @@ class SuppliesService():
     def update_supplies(self,id:int,data:Supplies):
         supplies = self .db.query(SuppliesModel).filter(SuppliesModel.id == id).first()
         supplies.supplier_id = data.supplier_id
-        supplies.Product_id = data.product_id
+        supplies.product_id = data.product_id
         supplies.purchase_price = data.purchase_price
         self.db.commit()
         return
