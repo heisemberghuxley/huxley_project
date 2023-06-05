@@ -9,6 +9,6 @@ def test_home():
     assert response.status_code == 200
 
 def test_route_movie():
-    response = client.get("/movies")
+    response = client.get("/product")
     assert response.status_code ==200
     
