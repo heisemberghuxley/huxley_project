@@ -1,30 +1,30 @@
-# Proyecto de CRUD de S.I - FastAPI
+# IS CRUD Project - FastAPI
 
-<img src="img/mejores-sistemas-de-inventarios.png" alt="Logo del SISTEMA DE INVENTARIOS">
+<img src="img/mejores-sistemas-de-inventarios.png" alt="INVENTORY SYSTEM Logo">
 
-## Descripción
+## Description
 
-Este proyecto es un ejemplo de una API RESTful desarrollada con FastAPI que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en un modelo de sistem inventory. Está diseñado con un enfoque académico para que los aprendices de programación backend puedan utilizarlo como punto de partida y comenzar a trabajar sobre él.
+This project is an example of a RESTful API developed with FastAPI that allows you to perform CRUD (Create, Read, Update, Delete) operations on a system inventory model. It is designed with an academic focus so that backend programming learners can use it as a starting point and start working on it.
 
-## Funcionalidades
+## Features
 
-- Obtener todas los productos disponibles
-- Obtener un producto por su ID
-- Crear un nueva prodcuto
-- Actualizar una producto existente
-- Eliminar un producto
+- Get all available products
+- Get a product by your ID
+- Create a new product
+- Update an existing product
+- Delete a product
 
-## Tecnologías utilizadas
+## Used technology
 
-- Python
-- FastAPI
-- Pydantic
-
-
+-Python
+-FastAPI
+-Pydantic
 
 
-## Contacto
 
-Si tienes alguna pregunta o sugerencia de este proyecto, no dudes en contactarme en [elhuxley277@gmail.com](https://github.com/heisemberghuxley).
+
+## Contact
+
+If you have any questions or suggestions about this project, feel free to contact me at [elhuxley277@gmail.com](https://github.com/heisemberghuxley).
 
 
